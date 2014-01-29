@@ -1,7 +1,5 @@
 Given(/^I visit home page and see the sign in popup$/) do
-  within("div#new_city_select") do
-    page.find(".no-subscription").click
-  end
+  page.find("#new_city_select").find(".no-subscription").click
   click_link("Sign In")
 end
 
